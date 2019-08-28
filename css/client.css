@@ -1,0 +1,106 @@
+@import "index.css";
+body {
+    position: relative;
+    box-sizing: border-box;
+}
+.paycontent {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+}
+.payhere {
+    margin: 0;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    border: 1px solid transparent;
+}
+.payhere button {
+    width: 150px;
+    height: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: green;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: ivory;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.payhere button :hover {
+    border-style: solid;
+    border-color: green;
+    background-color: antiquewhite;
+    color: greenyellow;
+    box-shadow: -2px;
+}
+.payhere img {
+    width: 400px;
+    height: 350px;
+    margin: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+  
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 350px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    overflow: visible;
+}
+  
+/* Add styles to the form container */
+.form-container {
+    width: 600px;
+    padding: 10px;
+    background-color: white;
+    height: 800px;
+    overflow: visible;
+}
+  
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=number] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+  
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+  
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
