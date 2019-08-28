@@ -92,4 +92,98 @@
     <script src="../javascript/index.js" type="text/javascript"></script>
     <script src="../javascript/search.js" type="text/javascript"></script>
 </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PointPay|Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li id="logoo"><a href="index.html"><img src="../assets/logo.png"></a></li>
+                <a href="../html/index.html" title="home"><li id="firstitem">
+                    Home
+                </li></a>
+                <a href="../html/index.html#about" target="_parent" title="About" onmousedown="titleChange()"><li>
+                    About
+                </li></a>
+                <a href="../html/client.html" target="_blank" title="buy item"><li>
+                    Buy Item
+                </li></a>
+                <a href="../html/index.html#contact" title="contact" onmousedown="titleChanges()"><li>
+                    Contact 
+                </li></a>
+            </ul>
+            <!-- <button>Sign Up</button>
+            <button>Log In</button> -->
+          
+                <input required type="text" placeholder="search item here" title="search" id="searchtext">
+                <button type="type" onclick="searchresults()">Search</button>
+           
+            
+        </nav>
+    </div>
+    <div id="homefield">
+        <h3>Welcome!</h3>
+        <h6>Pay <em>on</em> the point, without being <em>at</em> the point</h6>
+    </div>
+    <div id="about">
+        <h3>About Us</h3>
+        <p>
+            PayPoint is a point of sale (POS) web application for agricultural products. We seek to solve the issue of farm product accessibilty, PayPoint allows users to buy farm produce at the convenience of their homes, users can also purchase seeds or any farm produce they want, they can either pick it up or have it delivered to them.<br/>
+            With PayPoint, you don't have to worry about getting produce or seeds. You can purchase from our wide range of products, what you desire.<br/>
+            
+        </p>
+    </div>
+    <div id="contact">
+        <div id="contactgroup">
+            <h4>Contact Us</h4>
+            <p>
+                PointPay<br></br>
+                0265534903<br></br>
+                Monday - Friday: 9am to 5pm<br></br>
+                Asoyi Road, Accra, Ghana. 
+            </p>
+        </div>
+        <div id="contacttwo">
+            <h4 id="contactform">Contact Us</h4>
+                <form action="../back/contactMessages.js" method="POST" name="contactform" id="contactForm">
+                <input class="left" type="text" placeholder="First Name" name="first name" id="fn" required>
+                <input class="right" type="text" placeholder="Last Name" name="last name" id="ln" required>
+                <br/>
+                <br/>
+                <input class="left" type="email" placeholder="Email address" name="email address" id="ea" required>
+                <input class="right" type="text" placeholder="Subject" name="subject">
+                <br/>
+                <br/>
+                <input id="contactmessage" type="text" placeholder="Message" name="message" required><br/>
+                <br/>
+                <button type="submit"  onclick="proceed()" id="contactbutton">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>
+                Copyright © 2019 PointPay. All rights reserved. 
+            </p>
+            <ul>
+                <li id="firsticon"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+            </ul>
+        </div>
+    </footer>
+    <a href="#">
+        <i class="fa fa-angle-up" id="goup"></i>
+    </a>
+    <script src="../javascript/index.js" type="text/javascript"></script>
+    <script src="../javascript/search.js" type="text/javascript"></script>
+</body>
 </html>

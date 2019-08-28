@@ -18,3 +18,23 @@ header img {
     width: 150px;
     height: 80px;
 }
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+header  {
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(0, 255, 255, 0.384);
+    display: inline-flex;
+    position: fixed;
+    z-index: 1000;
+    margin: 0;
+}
+
+header img {
+    width: 150px;
+    height: 80px;
+}
